@@ -570,12 +570,7 @@ Problema:
 Buscar un número en una matriz n x n donde filas y columnas
 están ordenadas ascendentemente.
 
-Idea:
-Hay varias soluciones posibles. Una opción clásica eficiente es:
-- Empezar en la esquina superior derecha
-- Si el número actual es mayor que el buscado, mover a la izquierda
-- Si es menor, mover hacia abajo
-- Repetir hasta encontrarlo o salir de la matriz
+
 
 Complejidad:
 Tarda como máximo n + n pasos
@@ -583,41 +578,4 @@ Tarda como máximo n + n pasos
 Resultado final:
 T(n) = Θ(n)
 
-Observación:
-- Esto ya es subcuadrático porque mejora a Θ(n²)
-- Aunque el enunciado pide Divide y Vencerás, en muchos cursos
-  aceptan esta solución por ser más simple y eficiente
-
-Si se exige una formulación recursiva de Divide y Vencerás:
-- Se puede dividir la matriz y descartar regiones
-- Pero el análisis es más complejo
-- La solución práctica más conocida sigue siendo Θ(n)
-"""
-"""
-Ejercicio 1: Suma de un arreglo
-T(n) = 2T(n/2) + Θ(1)
-Resultado: Θ(n)
-
-Ejercicio 2: Máximo y mínimo
-T(n) = 2T(n/2) + Θ(1)
-Resultado: Θ(n)
-
-Ejercicio 3: Karatsuba
-T(n) = 3T(n/2) + Θ(n)
-Resultado: Θ(n^log_2(3)) ≈ Θ(n^1.585)
-
-Ejercicio 4: Potenciación rápida
-T(n) = T(n/2) + Θ(1)
-Resultado: Θ(log n)
-
-Ejercicio 5: Merge Sort
-T(n) = 2T(n/2) + Θ(n)
-Resultado: Θ(n log n)
-
-Ejercicio 6: Strassen
-T(n) = 7T(n/2) + Θ(n²)
-Resultado: Θ(n^log_2(7)) ≈ Θ(n^2.807)
-
-Ejercicio 7: Búsqueda en matriz ordenada
-Resultado: Θ(n)
 """
