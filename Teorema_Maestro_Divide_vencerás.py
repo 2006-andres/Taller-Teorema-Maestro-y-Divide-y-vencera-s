@@ -578,4 +578,34 @@ Tarda como máximo n + n pasos
 Resultado final:
 T(n) = Θ(n)
 
+
+# -------------------------
+# Ejercicio Big Θ
+# -------------------------
+
+int misteri (int n) {
+    int f = 1;
+    for (int i = 2; i <= n; ++i) 
+        f *= i;
+    return f;
+}
+
+Lo que hace es:
+
+Empieza con f = 1
+Multiplica f por todos los números desde 2 hasta n
+Devuelve el resultado
+
+Eso es exactamente el factorial de n
+
+f=n!=1⋅2⋅3⋅⋯⋅n
+
+Ejemplo: Si n = 5: f=1⋅2⋅3⋅4⋅5=120
+
+Coste en función de n: El bucle: for (int i = 2; i <= n; ++i)
+
+Se ejecuta aproximadamente n - 1 veces
+En cada iteración hay una operación constante (f *= i)
+
+Entonces el coste total es: T(n)=O(n)
 """
